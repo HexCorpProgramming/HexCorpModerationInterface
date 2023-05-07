@@ -4,4 +4,6 @@ WORKDIR /var/opt/HexCorpModerationInterface
 
 COPY . .
 
-CMD npm ci && npm start
+RUN npm ci
+
+CMD npm start
