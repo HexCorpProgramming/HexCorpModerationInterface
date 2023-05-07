@@ -8,3 +8,6 @@
 /config.*
 *.config.ini
 !/config.example.ini
+
+# Mitigation for Apple's idiosyncracies
+.DS_Store
