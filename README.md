@@ -35,6 +35,7 @@ docker run \
     --detach \
     --restart always \
     --volume ./modmailbot-db/:/var/opt/HexCorpModerationInterface/db/\
+    -P\
     mod_interface:latest
 ```
 
