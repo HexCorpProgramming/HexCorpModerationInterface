@@ -21,15 +21,15 @@ docker image build --tag mod_interface:latest .
 
 The configuration file isn't pushed to the repo, since it contains sensitive
 information such as server IDs, and especially the bot token. Create a
-configuration file called `config.ini`, add it to the current working
-directory, and run the following:
+configuration file called `config.ini`, add it to the directory above the
+current working directory, and run the following:
 
 ``` bash
 docker run \
     --name ModerationInterface \
     --detach \
     --restart always \
-    --volume config.ini:/var/opt/HexCorpModerationInterface/config.ini \
+    --volume ../config.ini:/var/opt/HexCorpModerationInterface/config.ini \
     mod_interface:latest
 ```
 
